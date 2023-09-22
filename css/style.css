@@ -1,0 +1,118 @@
+:root {
+    --color-offwhite: rgb(240,240,240);
+
+    --width-sharebtn: 40px;
+    --height-sharebtn: 40px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(10, 10, 10);
+    color: var(--color-offwhite);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+header {
+    width: 95%;
+    max-width: 788px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: var(--color-offwhite);
+    text-decoration: none;
+}
+
+.share-button {
+    width: var(--width-sharebtn);
+    height: var(--height-sharebtn);
+    border-radius: 20px;
+    background-color: var(--color-offwhite);
+    cursor: pointer;
+}
+
+.share-button svg {
+    margin-left: 12px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    width: 192px;
+    height: 192px;
+    border-radius: 48px;
+    overflow: hidden;
+}
+
+#my-mug {
+    width: 192px;
+    height: 192px;
+}
+
+
+/* .tile is an <a> tag with the class of .tile */
+
+.tile {
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    margin: 7px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tile:hover, .share-button:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transform: scale(1.02);
+}
+
+.icon {
+    margin: 0 8px;
+    width: 44px;
+    height: 44px;
+}
+
+.icon img {
+    width: 44px;
+    height: 44px;
+}
+
+.tile-share-button {
+    margin: 8px;
+    width: var(--width-sharebtn);
+    height: var(--height-sharebtn);
+    border-radius: 20px;
+    background-color: rgb(52, 52, 52);
+
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.tile-share-button svg {
+    margin-left: 12px;
+    margin-top: 10px;
+}
